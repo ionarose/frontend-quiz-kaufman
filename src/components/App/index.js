@@ -3,7 +3,7 @@ import Header from "../Header";
 import Form from "../Form";
 import QuizBody from "../QuizBody";
 import { useEffect, useState } from "react";
-const url = "https://quizkaufman.netlify.app/"
+const url = "https://quizkaufman.netlify.app"
 function App() {
   const [allQuestions, setAllQuestions] = useState([]);
 
