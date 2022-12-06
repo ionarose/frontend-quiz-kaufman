@@ -3,7 +3,7 @@
 
 
 Lightwight, customisable flashcard quiz app for bootcampers learning with the School of Code.
- <link href="https://quizkaufman.netlify.app/" >Live Demo</link>
+ [Live Demo](https://quizkaufman.netlify.app/)
 ## API Reference
 
 #### Get all questions
