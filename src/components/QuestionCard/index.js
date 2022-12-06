@@ -30,7 +30,7 @@ export default function QuestionCard({
   }
 
   async function editQuestion(id, event) {
- await fetch(`/api/questions/${id}`, {
+ await fetch(`https://quiz-kaufman-backend.onrender.com/api/questions/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json; charset=UTF-8"},
       body: JSON.stringify(editFormData),

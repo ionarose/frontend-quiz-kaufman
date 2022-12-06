@@ -3,7 +3,7 @@ import Header from "../Header";
 import Form from "../Form";
 import QuizBody from "../QuizBody";
 import { useEffect, useState } from "react";
-const url = "https://quizkaufman.netlify.app"
+const url = "https://quiz-kaufman-backend.onrender.com"
 function App() {
   const [allQuestions, setAllQuestions] = useState([]);
 
@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     async function getTopics() {
-      const response = await fetch("${url}/api/questions");
+      const response = await fetch(`${url}/api/questions`);
       const data = await response.json();
       setAllQuestions(data.payload);
     }

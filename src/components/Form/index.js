@@ -20,7 +20,7 @@ export default function Form() {
   }
 
   async function addNewQuestion() {
-    await fetch(`/api/questions`, {
+    await fetch(`https://quiz-kaufman-backend.onrender.com/api/questions`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
