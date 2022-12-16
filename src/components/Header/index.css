@@ -4,8 +4,8 @@
   animation: wiggle 2.5s infinite;
   align-self: center;
 }
-logo.hover {
-  animation: none;
+.logo:hover {
+  transform: scale(1.1);
 }
 
 
@@ -17,21 +17,25 @@ logo.hover {
   100% { transform: rotate(0deg); }
 }
 
- 
 
 .logo-image {
   max-width: 100%;
   max-height: auto;
+
 }
+
 .header {
   display: flex;
   justify-content: center;
   width: 60%;
   height: 30vh;
-  background: rgba(255, 255, 255, 0.52);
+  background: rgba(255, 255, 255, 0.301);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+  .header:hover{
+filter: drop-shadow(10px 8px 4px #f7f8f886);
+  }

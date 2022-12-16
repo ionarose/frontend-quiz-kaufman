@@ -13,7 +13,6 @@ export default function QuizBody({ allQuestions, deleteQuestion }) {
   return (
     <div id="quiz-body">
       <QuizGenerator setTopics={setTopics} />
-
       <QuestionDisplay
         deleteQuestion={deleteQuestion}
         questions={filteredQuestions}

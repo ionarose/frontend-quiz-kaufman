@@ -9,7 +9,7 @@ export default function QuestionCard({
   text_link,
   video_link,
   interactive_link,
-  topicId,
+  
 }) {
   const [isActive, setIsActive] = useState(false);
   const [isDeleted, setIsDeleted] = useState(false);
@@ -17,15 +17,12 @@ export default function QuestionCard({
   const [editFormVisibility, setEditFormVisibility] = useState(false);
   const [editFormData, setEditFormData] = useState({});
 
-
-  console.log("this is editFormData state: " + JSON.stringify(editFormData));
   function handleChangeFormEdit(event) {
     const Question = event.target.form.Questions.value;
     const Answers = event.target.form.Answer.value;
     console.log("this is question form e target value " + Question);
     console.log("this is answer form e target value " + Answers);
 
- 
     setEditFormData({ question: Question, answer: Answers });
   }
 
@@ -49,12 +46,12 @@ export default function QuestionCard({
     }
   };
 
-  //handle click function to hide the deleted question
+  //handle click function to hide the deleted question via css (won't disappear until next fetch otherwise)
   const handleClickDelete = (event) => {
     setIsDeleted((current) => !current);
   };
 
-  //handle click function to show / hide the edit form 
+  //handle click function to show / hide the edit question form 
   const editButtonHandleClick = (event) => {
     setEditFormVisibility((current) => !current)}
 
