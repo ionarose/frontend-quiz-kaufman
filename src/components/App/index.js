@@ -14,12 +14,12 @@ function App() {
   }
 
   useEffect(() => {
-    async function getTopics() {
+    async function getEverything() {
       const response = await fetch(`${url}/api/questions`);
       const data = await response.json();
       setAllQuestions(data.payload);
     }
-    getTopics();
+    getEverything();
   }, []);
 
   return (

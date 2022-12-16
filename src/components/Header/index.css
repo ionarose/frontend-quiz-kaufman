@@ -1,9 +1,24 @@
 .logo {
   height: 180px;
   width: 270px;
-
+  animation: wiggle 2.5s infinite;
   align-self: center;
 }
+logo.hover {
+  animation: none;
+}
+
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+ 
+
 .logo-image {
   max-width: 100%;
   max-height: auto;
